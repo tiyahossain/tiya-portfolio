@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-label="E-commerce storefront interface preview">
+  <defs>
+    <linearGradient id="p2bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1030" />
+      <stop offset="55%" stop-color="#3b0764" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="p2accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0abfc" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <linearGradient id="p2btn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="520" fill="url(#p2bg)" />
+  <circle cx="680" cy="80" r="180" fill="#f0abfc" opacity="0.14" />
+  <circle cx="110" cy="470" r="160" fill="#22d3ee" opacity="0.12" />
+
+  <rect x="36" y="36" width="728" height="448" rx="18" fill="#150d2b" fill-opacity="0.86" stroke="#a855f7" stroke-opacity="0.4" />
+
+  <!-- top bar -->
+  <rect x="36" y="36" width="728" height="52" rx="18" fill="#221442" />
+  <rect x="64" y="54" width="84" height="16" rx="8" fill="url(#p2accent)" />
+  <g fill="#4c3a7a">
+    <rect x="220" y="57" width="48" height="10" rx="5" />
+    <rect x="288" y="57" width="42" height="10" rx="5" />
+    <rect x="350" y="57" width="54" height="10" rx="5" />
+  </g>
+  <circle cx="664" cy="62" r="13" fill="#3b2a6b" />
+  <circle cx="700" cy="62" r="13" fill="#3b2a6b" />
+  <circle cx="734" cy="62" r="13" fill="url(#p2btn)" />
+
+  <!-- hero banner -->
+  <rect x="64" y="112" width="672" height="120" rx="16" fill="#2a1a52" stroke="#a855f7" stroke-opacity="0.3" />
+  <rect x="92" y="140" width="200" height="16" rx="8" fill="#e9d5ff" opacity="0.9" />
+  <rect x="92" y="168" width="300" height="10" rx="5" fill="#6d5aa3" />
+  <rect x="92" y="188" width="240" height="10" rx="5" fill="#6d5aa3" />
+  <rect x="92" y="208" width="96" height="14" rx="7" fill="url(#p2btn)" />
+  <circle cx="640" cy="172" r="52" fill="url(#p2accent)" opacity="0.55" />
+
+  <!-- product grid -->
+  <g>
+    <g transform="translate(64 256)">
+      <rect width="200" height="196" rx="16" fill="#241647" stroke="#3f2f6e" />
+      <rect x="16" y="16" width="168" height="104" rx="10" fill="#4c2f8f" />
+      <path d="M32 120 L78 74 L112 104 L148 66 L168 84 L168 120 Z" fill="#a855f7" opacity="0.5" />
+      <rect x="16" y="134" width="120" height="10" rx="5" fill="#7c6bb0" />
+      <rect x="16" y="154" width="70" height="12" rx="6" fill="#c084fc" />
+      <rect x="140" y="150" width="44" height="24" rx="12" fill="url(#p2btn)" />
+    </g>
+    <g transform="translate(300 256)">
+      <rect width="200" height="196" rx="16" fill="#241647" stroke="#3f2f6e" />
+      <rect x="16" y="16" width="168" height="104" rx="10" fill="#5b2f9c" />
+      <path d="M32 116 L72 84 L110 112 L150 70 L168 88 L168 120 Z" fill="#818cf8" opacity="0.55" />
+      <rect x="16" y="134" width="120" height="10" rx="5" fill="#7c6bb0" />
+      <rect x="16" y="154" width="58" height="12" rx="6" fill="#c084fc" />
+      <rect x="140" y="150" width="44" height="24" rx="12" fill="url(#p2btn)" />
+    </g>
+    <g transform="translate(536 256)">
+      <rect width="200" height="196" rx="16" fill="#241647" stroke="#3f2f6e" />
+      <rect x="16" y="16" width="168" height="104" rx="10" fill="#3f2378" />
+      <path d="M32 118 L84 90 L124 108 L168 74 L168 120 L32 120 Z" fill="#22d3ee" opacity="0.45" />
+      <rect x="16" y="134" width="120" height="10" rx="5" fill="#7c6bb0" />
+      <rect x="16" y="154" width="82" height="12" rx="6" fill="#c084fc" />
+      <rect x="140" y="150" width="44" height="24" rx="12" fill="url(#p2btn)" />
+    </g>
+  </g>
+</svg>

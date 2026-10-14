@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-label="Analytics dashboard interface preview">
+  <defs>
+    <linearGradient id="p1bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172f" />
+      <stop offset="60%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#312e81" />
+    </linearGradient>
+    <linearGradient id="p1bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#22d3ee" />
+    </linearGradient>
+    <linearGradient id="p1area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="520" fill="url(#p1bg)" />
+  <g opacity="0.12" stroke="#a5b4fc" stroke-width="1">
+    <path d="M0 60h800M0 140h800M0 220h800M0 300h800M0 380h800M0 460h800" />
+    <path d="M40 0v520M160 0v520M280 0v520M400 0v520M520 0v520M640 0v520M760 0v520" />
+  </g>
+
+  <!-- browser chrome -->
+  <rect x="36" y="36" width="728" height="448" rx="18" fill="#0b1020" stroke="#4f46e5" stroke-opacity="0.45" />
+  <rect x="36" y="36" width="728" height="42" rx="18" fill="#151a33" />
+  <circle cx="64" cy="57" r="6" fill="#f87171" />
+  <circle cx="86" cy="57" r="6" fill="#fbbf24" />
+  <circle cx="108" cy="57" r="6" fill="#34d399" />
+  <rect x="140" y="49" width="230" height="16" rx="8" fill="#2a3154" />
+
+  <!-- sidebar -->
+  <rect x="58" y="100" width="150" height="360" rx="14" fill="#141a30" />
+  <rect x="76" y="122" width="114" height="12" rx="6" fill="#6366f1" />
+  <g fill="#333b63">
+    <rect x="76" y="156" width="114" height="10" rx="5" />
+    <rect x="76" y="186" width="92" height="10" rx="5" />
+    <rect x="76" y="216" width="104" height="10" rx="5" />
+    <rect x="76" y="246" width="78" height="10" rx="5" />
+    <rect x="76" y="276" width="98" height="10" rx="5" />
+  </g>
+
+  <!-- KPI cards -->
+  <g>
+    <rect x="230" y="100" width="163" height="86" rx="14" fill="#171d38" stroke="#4f46e5" stroke-opacity="0.3" />
+    <rect x="248" y="120" width="54" height="9" rx="4.5" fill="#3b4478" />
+    <rect x="248" y="142" width="94" height="18" rx="6" fill="#818cf8" />
+
+    <rect x="407" y="100" width="163" height="86" rx="14" fill="#171d38" stroke="#22d3ee" stroke-opacity="0.3" />
+    <rect x="425" y="120" width="54" height="9" rx="4.5" fill="#3b4478" />
+    <rect x="425" y="142" width="78" height="18" rx="6" fill="#22d3ee" />
+
+    <rect x="584" y="100" width="158" height="86" rx="14" fill="#171d38" stroke="#a855f7" stroke-opacity="0.35" />
+    <rect x="602" y="120" width="54" height="9" rx="4.5" fill="#3b4478" />
+    <rect x="602" y="142" width="86" height="18" rx="6" fill="#c084fc" />
+  </g>
+
+  <!-- chart -->
+  <rect x="230" y="204" width="512" height="256" rx="16" fill="#121831" stroke="#2a3154" />
+  <path d="M262 412 L322 372 L382 388 L442 330 L502 352 L562 288 L622 306 L682 244 L714 258 L714 424 L262 424 Z" fill="url(#p1area)" />
+  <path d="M262 412 L322 372 L382 388 L442 330 L502 352 L562 288 L622 306 L682 244 L714 258" fill="none" stroke="url(#p1bar)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <g fill="#22d3ee">
+    <circle cx="442" cy="330" r="6" />
+    <circle cx="562" cy="288" r="6" />
+    <circle cx="682" cy="244" r="6" />
+  </g>
+
+  <!-- bars -->
+  <g fill="url(#p1bar)" opacity="0.85">
+    <rect x="284" y="392" width="16" height="24" rx="4" />
+    <rect x="344" y="384" width="16" height="32" rx="4" />
+    <rect x="404" y="374" width="16" height="42" rx="4" />
+    <rect x="464" y="392" width="16" height="24" rx="4" />
+    <rect x="524" y="368" width="16" height="48" rx="4" />
+    <rect x="584" y="386" width="16" height="30" rx="4" />
+    <rect x="644" y="376" width="16" height="40" rx="4" />
+  </g>
+</svg>

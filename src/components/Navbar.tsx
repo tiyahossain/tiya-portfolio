@@ -134,7 +134,7 @@ export default function Navbar() {
           </a>
 
           {/* Desktop links */}
-          <ul className="hidden items-center gap-1 lg:flex">
+          <ul className="hidden items-center gap-1 xl:flex">
             {NAV_LINKS.map((link) => {
               const isActive = active === link.id
               return (
@@ -171,7 +171,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={(event) => goTo(event, 'contact')}
-              className="btn-brutal hidden bg-navy px-4 py-2.5 text-xs uppercase tracking-wide text-ink-solid sm:inline-flex"
+              className="btn-brutal hidden bg-navy px-4 py-2.5 text-xs uppercase tracking-wide text-ink-solid md:inline-flex"
             >
               <Sparkles className="h-4 w-4" />
               Let&apos;s talk
@@ -184,7 +184,7 @@ export default function Navbar() {
               aria-expanded={menuOpen}
               aria-controls="mobile-menu"
               aria-label={menuOpen ? 'Close menu' : 'Open menu'}
-              className="relative grid h-10 w-10 place-items-center border-2 border-ink bg-card text-ink shadow-brutal-sm transition-colors lg:hidden"
+              className="relative grid h-10 w-10 place-items-center border-2 border-ink bg-card text-ink shadow-brutal-sm transition-colors xl:hidden"
             >
               <span className="relative block h-4 w-5">
                 <motion.span
@@ -217,7 +217,7 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
               transition={{ duration: 0.22 }}
-              className="mt-2 border-2 border-ink bg-card p-2 shadow-brutal lg:hidden"
+              className="mt-2 border-2 border-ink bg-card p-2 shadow-brutal xl:hidden"
             >
               <ul className="flex flex-col border-2 border-ink">
                 {NAV_LINKS.map((link, index) => {
@@ -271,7 +271,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setMenuOpen(false)}
-            className="fixed inset-0 -z-10 cursor-default bg-ink/30 lg:hidden"
+            className="fixed inset-0 -z-10 cursor-default bg-ink/30 xl:hidden"
           />
         ) : null}
       </AnimatePresence>

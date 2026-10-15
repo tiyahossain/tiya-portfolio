@@ -1201,7 +1201,7 @@ export default function Mascot() {
         onPointerUp={handlePointerUp}
         onClick={handlePetCat}
         style={{ touchAction: 'pan-y' }}
-        className="relative z-10 mx-auto mt-4 h-72 w-72 cursor-grab overflow-hidden border-4 border-ink bg-paper shadow-brutal-lg active:cursor-grabbing sm:h-80 sm:w-80"
+        className="relative z-10 mx-auto mt-4 aspect-square w-full max-w-[18rem] cursor-grab overflow-hidden border-4 border-ink bg-paper shadow-brutal-lg active:cursor-grabbing sm:max-w-[20rem]"
         aria-label="3D mascot — move to track gaze, drag to rotate, click to pet"
       >
         {/* Floating Purr Hearts */}

@@ -100,6 +100,14 @@
     -webkit-tap-highlight-color: transparent;
   }
 
+  /* Guard against accidental sideways scroll on small screens caused by
+     decorative offset elements. `clip` avoids creating a scroll container
+     (unlike `hidden`), so fixed positioning and smooth scroll keep working. */
+  html,
+  body {
+    overflow-x: clip;
+  }
+
   body {
     @apply bg-paper font-sans text-ink antialiased;
     text-rendering: optimizeLegibility;

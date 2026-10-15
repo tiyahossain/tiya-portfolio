@@ -1,6 +1,6 @@
 import type { ComponentType } from 'react'
 
-import { GithubIcon, LinkedinIcon, XIcon } from './BrandIcons'
+import { GithubIcon, LinkedinIcon } from './BrandIcons'
 
 export type Social = {
   label: string
@@ -10,8 +10,11 @@ export type Social = {
 
 export const SOCIALS: Social[] = [
   { label: 'GitHub', href: 'https://github.com/tiyahossain', icon: GithubIcon },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/tiyahossain', icon: LinkedinIcon },
-  { label: 'X (Twitter)', href: 'https://x.com/tiyahossain', icon: XIcon },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/tiya-hossain-023385442',
+    icon: LinkedinIcon,
+  },
 ]
 
 type SocialLinksProps = {

@@ -28,6 +28,14 @@ const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
 /* Flip to `true` to preview the error state without wiring a service. */
 const SIMULATE_FAILURE = false
 
+/**
+ * Formspree endpoint, e.g. 'https://formspree.io/f/abcdwxyz'.
+ * Grab a free form ID at https://formspree.io (no backend needed) and paste
+ * it here. While it's empty the form keeps the built-in demo success state so
+ * the site never looks broken.
+ */
+const FORMSPREE_ENDPOINT = ''
+
 function validateField(field: FieldName, value: string): string | undefined {
   const trimmed = value.trim()
 
@@ -55,8 +63,8 @@ const CONTACT_DETAILS = [
     accent: 'bg-navy',
     accentText: 'text-on-navy',
     label: 'Email',
-    value: 'hello@tiyahossain.dev',
-    href: 'mailto:hello@tiyahossain.dev',
+    value: 'tiya.hossain25@gmail.com',
+    href: 'mailto:tiya.hossain25@gmail.com',
   },
   { icon: MapPin, accent: 'bg-sky', accentText: 'text-ink-solid', label: 'Location', value: 'Dhaka, Bangladesh · Remote worldwide' },
   { icon: Clock, accent: 'bg-jam', accentText: 'text-ink-solid', label: 'Response time', value: 'Usually within 24 hours' },
@@ -116,14 +124,24 @@ export default function ContactForm() {
     setStatus('submitting')
 
     try {
-      // ── Connect your form service here ──────────────────────────────────
-      // e.g. await fetch('https://formspree.io/f/your-id', {
-      //        method: 'POST',
-      //        headers: { 'Content-Type': 'application/json' },
-      //        body: JSON.stringify(values),
-      //      })
-      await new Promise((resolve) => setTimeout(resolve, 1200))
-      if (SIMULATE_FAILURE) throw new Error('Simulated network failure')
+      if (FORMSPREE_ENDPOINT) {
+        const response = await fetch(FORMSPREE_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({
+            name: values.name,
+            email: values.email,
+            message: values.message,
+            _subject: `New portfolio message from ${values.name}`,
+          }),
+        })
+
+        if (!response.ok) throw new Error(`Form service responded ${response.status}`)
+      } else {
+        // No endpoint configured yet — keep the demo success state.
+        await new Promise((resolve) => setTimeout(resolve, 900))
+        if (SIMULATE_FAILURE) throw new Error('Simulated network failure')
+      }
 
       if (!mounted.current) return
       setStatus('success')

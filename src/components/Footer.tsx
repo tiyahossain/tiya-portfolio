@@ -90,11 +90,11 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               <li>
                 <a
-                  href="mailto:hello@tiyahossain.dev"
+                  href="mailto:tiya.hossain25@gmail.com"
                   className="inline-flex items-center gap-2 text-sm font-bold text-[#c9c2ad] transition-colors hover:text-navy-soft"
                 >
                   <Mail className="h-4 w-4 text-navy-soft" />
-                  hello@tiyahossain.dev
+                  tiya.hossain25@gmail.com
                 </a>
               </li>
               <li className="inline-flex items-center gap-2 text-sm font-bold text-[#c9c2ad]">
